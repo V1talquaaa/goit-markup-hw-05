@@ -87,8 +87,7 @@ img {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(--main-color);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 
@@ -109,25 +108,30 @@ img {
 }
 
 .nav-link {
-    color: var(--main-color);  
+    display: block;
+    color: var(--main-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--secondary-color);
+}
 .nav-all {
-display: flex;
-
-align-items: center;
+    display: flex;
+    align-items: center;
 }
 
-.nav-link,
 .nav-email,
 .nav-telephone {
     display: block;
-    
-}
-.nav-email,
- .nav-telephone {
     margin-left: 10px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--additional-color);
 }
 
 .header-contacts {
@@ -147,15 +151,7 @@ align-items: center;
 .header-contacts > li:not(:last-child) {
     margin-right: 30px;
 }
-.nav-email,
-.nav-telephone {
-    font-weight: 500;
-        font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: 0.02em;
-    color: var(--additional-color);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+
 
 .header-icon {
     fill: currentColor;
@@ -386,13 +382,12 @@ height: 44px;
     align-items: center;
     border-radius: 50%;
     background-color: #FFFFFF;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition:  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 .icon-soc {
     fill: #AFB1B8;
-    
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 .icon-link:hover,
 .icon-link:focus { 
@@ -427,8 +422,7 @@ height: 44px;
     height: 92px;
     border: solid 1px #AFB1B8;
     border-radius: 4px;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-            fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-item:not(:last-child) {
     margin-right: 30px;
@@ -444,6 +438,7 @@ height: 44px;
 
 .icon-clients {
     fill: #AFB1B8;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-item:hover {
 border-color: var(--secondary-color);
