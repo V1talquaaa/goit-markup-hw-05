@@ -122,11 +122,12 @@ align-items: center;
 .nav-email,
 .nav-telephone {
     display: block;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 .nav-email,
  .nav-telephone {
     margin-left: 10px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-contacts {
@@ -385,13 +386,13 @@ height: 44px;
     align-items: center;
     border-radius: 50%;
     background-color: #FFFFFF;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 .icon-soc {
     fill: #AFB1B8;
+    
 }
 .icon-link:hover,
 .icon-link:focus { 
